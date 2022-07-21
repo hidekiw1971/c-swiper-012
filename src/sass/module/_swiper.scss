@@ -1,0 +1,33 @@
+@use "global" as *;
+.wrap {
+  // padding: 16px;
+}
+@keyframes zoomUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+.swiper-slide-active .slide-img,
+.swiper-slide-duplicate-active .slide-img,
+.swiper-slide-prev .slide-img {
+  animation: zoomUp 10s linear 0s 1 normal both;
+}
+.slide-img img {
+  display: block;
+}
+
+.slide-img {
+  padding-top: 66.6%;
+  position: relative;
+}
+
+.slide-img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
