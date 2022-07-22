@@ -1,4 +1,5 @@
 @use "global" as *;
+// slider1
 .wrap {
   // padding: 16px;
 }
@@ -11,21 +12,62 @@
   }
 }
 
-.swiper-slide-active .slide-img,
-.swiper-slide-duplicate-active .slide-img,
-.swiper-slide-prev .slide-img {
+.swiper-slide-active .slide-img__layout1,
+.swiper-slide-duplicate-active .slide-img__layout1,
+.swiper-slide-prev .slide-img__layout1 {
   animation: zoomUp 10s linear 0s 1 normal both;
 }
-.slide-img img {
-  display: block;
-}
 
-.slide-img {
+.slide-img__layout1 {
   padding-top: 66.6%;
   position: relative;
 }
 
-.slide-img img {
+.slide-img__layout1 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// slider2
+.swiper-slide2 {
+  padding-top: 66.6%;
+  position: relative;
+}
+
+.swiper-slide2 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// slider3
+.wrap {
+  // padding: 16px;
+}
+@keyframes zoomUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+.swiper-slide-active .slide-img__layout3,
+.swiper-slide-duplicate-active .slide-img__layout3,
+.swiper-slide-prev .slide-img__layout3 {
+  animation: zoomUp 10s linear 0s 1 normal both;
+}
+
+.slide-img__layout3 {
+  padding-top: 66.6%;
+  position: relative;
+}
+
+.slide-img__layout3 img {
   position: absolute;
   top: 50%;
   left: 50%;
